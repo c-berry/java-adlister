@@ -6,7 +6,7 @@
 <body>
 
 <%@ include file="partials/nav.html"%>
-<h1>Greeting, Traveler!</h1>
+<h1>Greetings, Traveler!</h1>
 <%@ include file="partials/about.jsp"%>
 <%@ include file="partials/scripts.html" %>
 
