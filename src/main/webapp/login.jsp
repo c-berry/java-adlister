@@ -1,12 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    if (request.getMethod().equalsIgnoreCase("post")){
+    if (request.getMethod().equalsIgnoreCase("post")) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        if (username.equals("admin") && password.equals("password")) {
-            response.sendRedirect("profile.jsp");
+        if (username.equals("admin") && password.equals("codeup")) {
+            response.sendRedirect("/profile.jsp");
+        } else {
+            response.sendRedirect("/login.jsp");
         }
-        response.sendRedirect("login.jsp");
     }
 %>
 
@@ -20,7 +21,7 @@
 
 <form method="POST">
     <label for="login">User Login</label>
-    <input name="login" id="login" type="text">
+    <input name="username" id="login" type="text">
     <label for="pass">Password</label>
     <input name="password" id="pass" type="password">
     <button type="submit">Submit</button>
