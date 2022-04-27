@@ -5,6 +5,7 @@
 <head>
     <title>Pizza Form</title>
 </head>
+<body>
 <p>
 
 <h1>Order a pizza!</h1>
@@ -85,8 +86,8 @@
     </c:forEach>
 </ul>
 
-<c:if test="${address != null}">
-    <p>Delivery address: ${address}</p>
+<c:if test="${d_address != null}">
+    <p>Delivery address: ${d_address}</p>
 </c:if>
 
 </body>
