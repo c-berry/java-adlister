@@ -5,21 +5,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/wow-yay-colors")
-public class ColorPicked extends HttpServlet {
+@WebServlet("/incorrect")
+public class IncorrectGuess extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/viewcolor.jsp").forward(req, resp);
+
+        req.getRequestDispatcher("/guess-result.jsp").forward(req,resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
-//        String favColor = req.getParameter("color");
-
-//            req.getRequestDispatcher("/viewcolor.jsp").forward(req, resp);
+        String result = "i";
+        req.setAttribute("result", result);
+        req.getRequestDispatcher("/guess-result.jsp").forward(req,resp);
 
     }
 }

@@ -18,7 +18,7 @@ import java.io.IOException;
 
             String favColor = req.getParameter("color");
 
-            resp.sendRedirect("/picked-color?favColor=" + favColor);
+            resp.sendRedirect("/wow-yay-colors?favColor=" + favColor);
 
         }
     }
