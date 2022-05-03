@@ -18,7 +18,7 @@ public class JDBCTest {
             DriverManager.registerDriver(new Driver());
             //create connection object
             Connection connection = DriverManager.getConnection(
-                    config.getURL(),
+                    config.getUrl(),
                     config.getUser(),
                     config.getPassword()
             );
