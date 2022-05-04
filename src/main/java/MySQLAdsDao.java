@@ -8,9 +8,9 @@ public class MySQLAdsDao implements Ads{
 
     private Connection connection;
 
-    public MySQLAdsDao() {
+    public MySQLAdsDao(Config config) {
         try {
-            Config config = new Config();
+//            Config config = new Config();
             // Get the driver into our app
             DriverManager.registerDriver(new Driver());
             // Create the Connection object

@@ -35,3 +35,4 @@ SELECT * FROM users;
 SELECT * FROM ads;
 
 INSERT INTO users(username, email, password) VALUES ('Moe', 'moe@email.com', 'password');
+SELECT id FROM users WHERE username = 'Moe';
