@@ -8,6 +8,7 @@
             <li><a href="/login">Login</a></li>
             <li><a href="/logout">Logout</a></li>
             <li><a href="/ads/create">Create Ad</a></li>
+            <li><a href="/register">Create Account</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
