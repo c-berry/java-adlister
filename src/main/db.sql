@@ -13,12 +13,13 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS ads (
                      id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-                     userId INT UNSIGNED NOT NULL,
+                     user_id INT UNSIGNED NOT NULL,
                      title VARCHAR(240) NOT NULL,
                      description TEXT NOT NULL,
                      PRIMARY KEY (id),
-                     FOREIGN KEY (userId) REFERENCES users(id)
+                     FOREIGN KEY (user_id) REFERENCES users(id)
                          ON DELETE CASCADE
 );
 
 SELECT * FROM users;
+SELECT * FROM ads;
